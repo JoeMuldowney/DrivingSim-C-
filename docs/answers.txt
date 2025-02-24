@@ -1,0 +1,49 @@
+2/24/25
+10/23
+[master 24ff5f0] adding to readme file
+ 13 files changed, 77 insertions(+)
+ create mode 100644 .vs/DrivingSim/FileContentIndex/0e0335e9-2055-41d1-a960-0a79d7cb6f57.vsidx
+ create mode 100644 .vs/DrivingSim/FileContentIndex/79609b7c-4291-4bbf-91b2-37dd39326bac.vsidx
+ create mode 100644 .vs/DrivingSim/v17/.wsuo
+ create mode 100644 .vs/DrivingSim/v17/Browse.VC.db
+ create mode 100644 .vs/DrivingSim/v17/DocumentLayout.backup.json
+ create mode 100644 .vs/DrivingSim/v17/DocumentLayout.json
+ create mode 100644 .vs/DrivingSim/v17/ipch/AutoPCH/1d35da20e1ae3f73/BICYCLE.ipch
+ create mode 100644 .vs/DrivingSim/v17/ipch/AutoPCH/b1efbb09a7c0e400/POWEREDVEHICLE.ipch
+ create mode 100644 .vs/ProjectSettings.json
+ create mode 100644 .vs/VSWorkspaceState.json
+ create mode 100644 .vs/slnx.sqlite
+ create mode 100644 docs/status.txt
+git push
+Enumerating objects: 25, done.
+Counting objects: 100% (25/25), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (18/18), done.
+Writing objects: 100% (23/23), 8.11 MiB | 1.17 MiB/s, done.
+Total 23 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/JoeMuldowney/DrivingSim-C-.git
+   f4975e5..24ff5f0  master -> master
+
+How many commits have been done to the repository (not only by you, but by anyone) so far? Write the git command you used to get this information (4 points)
+git rev-list --count HEAD 8 commits
+When was the README.md  file modified last? Write the git command you used to get this information (4 points)
+git log -1 --format=%cd -- README.md
+Mon Feb 24 12:39:59 2025 -0500
+Mention two reasons why branches are used in a Git repository (4 points)
+Addng features or for a team of devs working on the same repo.  This minimizes conflicts in the main branch.
+What is the difference between git log and git status? (4 points)
+git log is to check history and git status shows the current state of the repo.
+What command would you use to see the commits where “Vehicle.h” was one of the committed files? (4 points)
+git log -- Vehicle.h
+What command would you use to see the commits whose commit message contains the word “file”? (4 points)
+git log --grep="file"
+In the context of object-oriented programming (I) What is inheritance? (II) What is polymorphism? (III) What is encapsulation? (6 points)
+Inheritance allows reuse of public or protect functions from the parent class in any child class.
+Polymorphism allows access to different object types all in the same interface.
+Encapsulation restrict access to direct varibles by using setter and getter methods
+
+9.  What is the main difference between the “Dictator and Lieutenants” workflow and the “Integration manager” workflow? (5 points)
+    How the changes are made on the repository.  Integration manager over sees all merges to main repo from a devs branch. A dictator and Lieutenants has a dev push to a lieutenant repo, which acts as a helper to dictatorto handle merge conflicts dictator pushs to main.
+10. How would a team of 100 developers benefit from following the “Dictator and Lieutenants” workflow instead of the “Centralized” workflow? (5 points)
+    Dictator and Lieutenants works best for large teams due to its ability to maintain a smooth workflow by having Lieutenants manage different sections of the projects.  Having 100 devs manage their own pulling and pushing could create conflicts and confusion in the main repo
